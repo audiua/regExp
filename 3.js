@@ -13,9 +13,7 @@ let result = [];
 let pattern = /^\s*(?:ул|пр-т|вул|пл|пер)?[.\s]*((?:\d*[-])?[А-Яа-яЁё.\s]+)(?:[,\s]*(?:дом)?[.\s]*)?(\d+[А-Яа-я-]*)?(?:[,\s]*(?:кв)?[.\s]*)?\/?(\d+)?\s*$/;
 
 addresses.forEach(function(item) {
-    let itemAddres = {
-        //input:item
-    };
+    let itemAddres = {}; //input:item
 
     let match = pattern.exec(item);
     if(match){
